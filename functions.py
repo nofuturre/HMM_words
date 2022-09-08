@@ -19,7 +19,7 @@ def letters_dist(words):
 
 
 def transition_matrix(words):
-    matrix = [[0 for _ in range(NO_LETTERS) + 1)] for _ in range(NO_LETTERS)]
+    matrix = [[0 for _ in range(NO_LETTERS + 1)] for _ in range(NO_LETTERS)]
     for word in words:
         for i in range(1, len(word)):
             if i == len(word) - 1:
